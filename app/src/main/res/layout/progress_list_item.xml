@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     xmlns:tools used to set up a background only for the preview
+     background of this container is transparent
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:background="#5191f7"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/runicon"
+                android:id="@+id/icon"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            >
+
+            <TextView
+                android:text="@string/activityTypeTextListItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityType"
+                tools:text="Running"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"/>
+
+            <TextView
+                tools:text="12-01-2017"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right|fill_vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:text="@string/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/durationLabel"
+                android:textColor="#90ffffff"
+                android:gravity="left|fill_vertical"/>
+
+            <TextView
+                android:text="@string/dateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/durationValue"
+                tools:text="30 min"
+                android:textColor="#90ffffff"
+                android:textSize="18sp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

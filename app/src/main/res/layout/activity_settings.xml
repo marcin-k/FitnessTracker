@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.marcin_k.gui_development.view.Settings"
+    android:background="@drawable/bg_blue">
+
+    <Button
+        android:text="@string/apply_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/applyButton"
+        android:background="#35ffffff"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:text="@string/goal_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:id="@+id/goalLabel"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/tvSettingsLogo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="@string/theme_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelTheme"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/spinnerWeight"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinnerTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/theme_array"
+        android:prompt="@string/theme_selection"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/spinnerWeight"/>
+
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinnerWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/weight_array"
+        android:prompt="@string/goal_selection"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/goalLabel"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="@string/reset_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:background="#95ec0e0e"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/resetAppButton"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/spinnerTheme"/>
+
+    <TextView
+        android:paddingTop="10sp"
+        android:text="@string/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSettingsLogo"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:paddingTop="5sp"
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="home"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+
+
+</RelativeLayout>

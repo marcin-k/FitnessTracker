@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Fitness Tracker</string>
+    <string name="add_new_record">Add new record</string>
+    <string name="duration_selection">Choose duration: </string>
+    <string-array name="duration_array">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>45 min</item>
+        <item>60 min</item>
+        <item>75 min</item>
+        <item>90 min</item>
+    </string-array>
+    <string name="theme_selection">Select app theme: </string>
+    <string-array name="theme_array">
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Orange</item>
+    </string-array>
+    <string name="goal_selection">Set up a goal (weight to lose): </string>
+    <string name="defaultActivitySymbol">---</string>
+    <string name="activityLabel">Activity:</string>
+    <string name="addButtonText">Add</string>
+    <string name="durationLabelText">Duration:</string>
+    <string name="select_activityText">Select Activity</string>
+    <string name="deafaultCaloriesCount">90 / 7777</string>
+    <string name="calories_burnedTextLabel">Calories Burned:</string>
+    <string name="welcomeText">Welcome</string>
+    <string name="defaultCaloriesInListView">90 / 1345</string>
+    <string name="calorie_goal_for_Text">Calorie Goal for Swimming</string>
+    <string name="list_is_emptyText">List is empty...</string>
+    <string name="your_progressText">Your Progress:</string>
+    <string name="reset_progress">Reset progress</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="settings">Settings</string>
+    <string name="update_your_name">Update your name:</string>
+    <string name="your_name">your name</string>
+    <string name="duration">Duration:</string>
+    <string name="activityTypeTextListItem">TextView</string>
+    <string name="dateText">TextView</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="fitness_tracker_app_name">Fitness Tracker</string>
+    <string name="new_user">New User</string>
+    <string name="appicon">appicon</string>
+    <string name="password">password</string>
+    <string name="retype_password">retype password</string>
+    <string name="username">username</string>
+    <string name="login">Login</string>
+    <string name="appicon2">appicon</string>
+    <string name="logo">logo</string>
+    <string name="home">home</string>
+    <string-array name="weight_array">
+        <item>0.5 kg</item>
+        <item>1 kg</item>
+        <item>2 kg</item>
+        <item>3 kg</item>
+        <item>4 kg</item>
+        <item>5 kg</item>
+        <item>6 kg</item>
+        <item>7 kg</item>
+        <item>8 kg</item>
+    </string-array>
+
+</resources>

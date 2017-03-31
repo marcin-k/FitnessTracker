@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_new_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.marcin_k.gui_development.view.AddNewRecord"
+    android:background="@drawable/bg_blue">
+
+    <ImageView
+        android:paddingTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/settingicon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageViewSettings"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:text="@string/select_activityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewSettings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/tvChooseActivity"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:ignore="RelativeOverlap"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewSettings"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/tennisicon"
+                android:id="@+id/imageViewTennis"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/swimicon"
+                android:id="@+id/imageViewSwim"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/hikeicon"
+                android:id="@+id/imageViewHike"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/runicon"
+                android:id="@+id/imageViewRun"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/golficon"
+                android:id="@+id/imageViewGolf"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bikeicon"
+                android:id="@+id/imageViewBike"
+                android:layout_weight="1"
+                android:contentDescription=""
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activitySelected"
+        android:text="@string/defaultActivitySymbol"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="300dp"
+
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap"/>
+
+    <TextView
+        android:text="@string/activityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTypeOfActivityLabel"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBaseline="@+id/activitySelected"
+        android:layout_alignBottom="@+id/activitySelected"
+        android:layout_toStartOf="@+id/tvChooseActivity"
+        tools:ignore="RelativeOverlap"/>
+
+    <TextView
+        android:text="@string/durationLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/twDurationLavel"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/activitySelected"
+        android:layout_alignStart="@+id/textViewTypeOfActivityLabel"/>
+
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/duration_array"
+        android:prompt="@string/duration_selection"
+        android:layout_alignTop="@+id/twDurationLavel"
+        android:layout_toEndOf="@+id/twDurationLavel"
+        android:layout_marginStart="29dp"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:text="@string/addButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addRecordToList"
+        android:background="#35ffffff"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5sp"
+        android:text="@string/home"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        tools:ignore="RelativeOverlap"/>
+
+
+</RelativeLayout>

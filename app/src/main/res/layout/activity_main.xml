@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.marcin_k.gui_development.view.MainActivity"
+    android:background="@drawable/bg_blue">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cal"
+        android:id="@+id/imageViewCalories"
+        android:layout_centerHorizontal="true"
+        android:contentDescription=""
+        android:layout_marginTop="65sp"
+        tools:ignore="ContentDescription"/>
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+
+        android:layout_marginTop="65sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarCalories"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/imageViewCalories"
+        android:layout_alignLeft="@id/imageViewCalories"
+        android:layout_alignRight="@id/imageViewCalories"
+        android:layout_alignTop="@+id/imageViewCalories"
+        android:indeterminate="?attr/windowActionBar"
+        app:cpb_background_progressbar_color="#aaaeb1"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progressbar_color="#F44336"
+        app:cpb_progressbar_width="10dp"
+        tools:ignore="RtlHardcoded"/>
+
+    <TextView
+        android:text="@string/welcomeText"
+        android:paddingTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewWelcome"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap"/>
+
+    <ImageView
+        android:paddingTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/settingicon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageViewSettings"
+        tools:ignore="ContentDescription"/>
+
+    <Button
+        android:text="@string/add_new_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAddNewRecord"
+        android:background="#35ffffff"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_below="@+id/imageViewCalories"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_weight="50"
+            android:paddingBottom="30sp"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                tools:ignore="ExtraText,NestedWeights">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/tennisicon"
+                    android:id="@+id/imageViewTennis"
+                    tools:ignore="ContentDescription"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBarTennis"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5sp"
+                    android:maxHeight="10dip"
+                    android:minHeight="10dip"
+                    tools:progress="50"
+                    android:progressDrawable="@drawable/tennis_progress_bar"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"/>
+
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/swimicon"
+                    android:id="@+id/imageViewSwim"
+                    tools:ignore="ContentDescription"/>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBarSwim"
+                    android:paddingTop="5sp"
+                    android:maxHeight="10dip"
+                    android:minHeight="10dip"
+                    tools:progress="50"
+                    android:progressDrawable="@drawable/swimming_progress_bar"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                >
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/hikeicon"
+                    android:id="@+id/imageViewHike"
+                    tools:ignore="ContentDescription"/>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBarHike"
+                    android:paddingTop="5sp"
+                    android:maxHeight="10dip"
+                    android:minHeight="10dip"
+                    tools:progress="50"
+                    android:progressDrawable="@drawable/hiking_progress_bar"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_weight="50"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/runicon"
+                    android:id="@+id/imageViewRun"
+                    tools:ignore="ContentDescription"/>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBarRun"
+                    android:paddingTop="5sp"
+                    android:maxHeight="10dip"
+                    android:minHeight="10dip"
+                    tools:progress="50"
+                    android:progressDrawable="@drawable/running_progress_bar"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/golficon"
+                    android:id="@+id/imageViewGolf"
+                    tools:ignore="ContentDescription"/>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBarGolf"
+                    android:paddingTop="5sp"
+                    android:maxHeight="10dip"
+                    android:minHeight="10dip"
+                    tools:progress="50"
+                    android:progressDrawable="@drawable/golf_progress_bar"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bikeicon"
+                    android:id="@+id/imageViewBike"
+                    tools:ignore="ContentDescription"/>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBarBike"
+                    android:paddingTop="5sp"
+                    android:maxHeight="10dip"
+                    android:minHeight="10dip"
+                    tools:progress="50"
+                    android:progressDrawable="@drawable/cycling_progress_bar"
+                    android:paddingRight="5sp"
+                    android:paddingStart="5sp"
+                    tools:ignore="RtlHardcoded"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/deafaultCaloriesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caloriesBurned"
+        android:layout_alignBaseline="@+id/caloriesBurnedLabel"
+        android:layout_alignBottom="@+id/caloriesBurnedLabel"
+        android:layout_alignStart="@+id/imageViewCalories"
+        android:layout_marginStart="44dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"/>
+
+    <TextView
+        android:text="@string/calories_burnedTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/caloriesBurnedLabel"
+        android:textColor="@color/run"
+        android:layout_below="@+id/imageViewCalories"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="52dp"/>
+
+
+</RelativeLayout>

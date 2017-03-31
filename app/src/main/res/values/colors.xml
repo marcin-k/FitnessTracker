@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="run">#FFD72E36</color>
+    <color name="swim">#FF62A0DD</color>
+    <color name="tennis">#FFD57124</color>
+    <color name="golf">#CCF872</color>
+    <color name="hike">#FF9A34E1</color>
+    <color name="bike">#FFEDBE38</color>
+
+</resources>
